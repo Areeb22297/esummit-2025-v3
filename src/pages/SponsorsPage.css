@@ -1,0 +1,189 @@
+
+.sponsors-page {
+  position: relative;
+  min-height: 100vh;
+  background-color: #151515;
+  color: #F5F0DE;
+}
+
+.sponsors-page main {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding-top: 70px; /* Account for fixed navbar */
+}
+
+.sponsors-page-hero {
+  position: relative;
+  background-color: #B92D1E;
+  padding: 6rem 2rem 4rem;
+  text-align: center;
+  overflow: hidden;
+}
+
+.sponsors-page-hero-content {
+  position: relative;
+  z-index: 1;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.sponsors-page-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: #F5F0DE;
+  margin-bottom: 1.5rem;
+  text-transform: uppercase;
+}
+
+.highlight {
+  color: #151515;
+}
+
+.sponsors-page-description {
+  font-size: 1.2rem;
+  color: #F5F0DE;
+  line-height: 1.6;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.sponsors-tiers {
+  padding: 3rem 2rem;
+}
+
+.tier {
+  margin-bottom: 4rem;
+}
+
+.tier-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 2rem;
+  font-weight: 600;
+  color: #F5F0DE;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.sponsors-grid {
+  display: grid;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.platinum-grid {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.gold-grid, .silver-grid, .bronze-grid {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.sponsor-page-card {
+  background-color: white;
+  border-radius: 12px;
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.sponsor-page-card:hover {
+  transform: translateY(-5px);
+}
+
+.sponsor-page-logo {
+  max-width: 100%;
+  max-height: 90px;
+  object-fit: contain;
+}
+
+.become-sponsor {
+  background-color: #22B5B5;
+  padding: 5rem 2rem;
+  text-align: center;
+}
+
+.become-sponsor-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.become-sponsor-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #151515;
+  margin-bottom: 1.5rem;
+}
+
+.become-sponsor-text {
+  font-size: 1.1rem;
+  color: #151515;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+
+.contact-btn {
+  background-color: #151515;
+  color: #F5F0DE;
+  padding: 0.75rem 2rem;
+  font-size: 1rem;
+  border: none;
+  transition: all 0.3s ease;
+}
+
+.contact-btn:hover {
+  background-color: #000;
+  transform: translateY(-2px);
+}
+
+@media (max-width: 1024px) {
+  .platinum-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .gold-grid, .silver-grid, .bronze-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .sponsors-page-title {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .gold-grid, .silver-grid, .bronze-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .sponsors-page-title {
+    font-size: 2.5rem;
+  }
+  
+  .sponsors-page-description {
+    font-size: 1rem;
+  }
+  
+  .tier-title {
+    font-size: 1.75rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .sponsors-page-hero {
+    padding: 4rem 1rem 3rem;
+  }
+  
+  .sponsors-tiers {
+    padding: 2rem 1rem;
+  }
+  
+  .sponsor-page-logo {
+    max-height: 70px;
+  }
+}
