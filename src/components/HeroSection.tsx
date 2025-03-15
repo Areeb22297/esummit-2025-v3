@@ -11,7 +11,8 @@ const HeroSection = () => {
   const targetDate = new Date('2025-03-21T00:00:00');
 
   return (
-    <div className="hero-section diagonal-section">
+    // <div className="hero-section diagonal-section">
+     <div className="hero-section">
       <div className="texture-overlay"></div>
       <div className="hero-content">
         <h1 className="hero-title e-summit-title">E-Summit 2025</h1>

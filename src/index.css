@@ -63,23 +63,6 @@
     text-transform: uppercase;
   }
 
-  .diagonal-section {
-    position: relative;
-    overflow: hidden;
-  }
-
-  .diagonal-section::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    width: 60%;
-    background-color: #22B5B5;
-    transform: skewX(-20deg) translateX(20%);
-    z-index: 0;
-  }
-
   .texture-overlay {
     background-image: url('/lovable-uploads/82caee42-75a7-4235-bb23-b83f6371ddef.png');
     background-size: cover;
